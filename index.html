@@ -77,8 +77,12 @@
         return;
       }
 
-      alert("로그인 성공!");
-      window.location.href = "https://www.example.com";  // 이 주소를 원하는 곳으로 바꾸세요
+      if (id === "cstest2" && pw === "1111") {
+        alert("로그인 성공!");
+        window.location.href = "https://www.example.com"; // 로그인 성공 후 이동할 페이지
+      } else {
+        alert("아이디 또는 비밀번호가 올바르지 않습니다.");
+      }
     }
   </script>
 </body>
