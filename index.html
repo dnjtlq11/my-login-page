@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인 페이지</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f3dfc6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .form-area {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input[type="text"], input[type="password"] {
+      padding: 10px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f4f4f4;
+    }
+
+    .login-btn {
+      padding: 10px;
+      background-color: #f47b20;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .bear {
+      width: 120px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="form-area">
+      <label>아이디</label>
+      <input type="text" placeholder="아이디 입력">
+      <label>비밀번호</label>
+      <input type="password" placeholder="비밀번호 입력">
+      <button class="login-btn">로그인</button>
+    </div>
+    <img src="bear.png" alt="곰 캐릭터" class="bear">
+  </div>
+</body>
+</html>
